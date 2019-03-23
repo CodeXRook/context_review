@@ -11,7 +11,7 @@ class App extends Component {
     const {innerText} = e.target;
 
     if(innerText === 'Dark Theme') {
-      
+      this.setState({ theme: { backgroundColor: 'black', color: 'white'} })
     }
   }
    
