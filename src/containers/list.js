@@ -9,9 +9,15 @@ export default class List extends React.Component {
 
     render() {
         return(
+            <ul>
+                {
             this.state.date.map((e, i ) => {
-
+                return <ListItem data={e} />
+            
+               
             })
+        }
+         </ul>
         )
     }
 }
