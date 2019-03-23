@@ -25,7 +25,7 @@ class App extends Component {
      
       <ThemeContext.Provider value={this.state.theme}>
       <button onClick={this.handleThemeChange}>Light Theme</button> <button onClick={this.handleThemeChange}>Dark Theme</button> 
-     <List/>
+     <List />
      </ThemeContext.Provider>
     
     );
