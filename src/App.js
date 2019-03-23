@@ -13,6 +13,9 @@ class App extends Component {
     if(innerText === 'Dark Theme') {
       this.setState({ theme: { backgroundColor: 'black', color: 'white'} })
     }
+    else if (innerText === 'Light Theme') {
+      this.setState({ theme: { backgroundColor: 'white', color: 'black'} })
+    }
   }
    
   render() {
