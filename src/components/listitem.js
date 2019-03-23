@@ -8,7 +8,7 @@ export default (props) => {
     <ThemeContext.Consumer>
         {
             (value) => {
-            return <li style={{ backgroundColor: value.backgroundColor, color: props.theme.color }}>{props.data}</li>   
+            return <li style={{ backgroundColor: value.backgroundColor, color: value.color }}>{props.data}</li>   
             }
         }
     </ThemeContext.Consumer>
