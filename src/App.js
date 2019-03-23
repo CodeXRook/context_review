@@ -8,14 +8,17 @@ class App extends Component {
     theme:{ backgroundColor: 'white', color: 'black'}
   }
   handleThemeChange = (e) => {
-    const {value} = e.target;
-    console.log(value);
+    const {innerText} = e.target;
+
+    if(innerText === 'Dark Theme') {
+      
+    }
   }
    
   render() {
     return ( 
       <>
-      <button>Light Theme</button> <button>Dark Theme</button> 
+      <button onClick={this.handleThemeChange}>Light Theme</button> <button onClick={this.handleThemeChange}>Dark Theme</button> 
      <List theme={this.state.theme}/>
       </>
     );
