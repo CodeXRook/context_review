@@ -3,15 +3,16 @@ import ThemeContext from '../contexts/theme';
 
 
 export default (props) => {
-    return 
-    <ThemeContext.Consume>
+    return(
+
+    <ThemeContext.Consumer>
         {
             (value) => {
-                
+            return <li style={{backgroundColor: props.theme.backgroundColor, color: props.theme.color }}>{props.data}</li>   
             }
         }
-    </ThemeContext.Consume>
-    return <li style={{backgroundColor: props.theme.backgroundColor, color: props.theme.color }}>{props.data}</li>
+    </ThemeContext.Consumer>
+    );
 }
 
 
