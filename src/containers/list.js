@@ -5,12 +5,6 @@ import ThemeContext from '../contexts/theme';
 
 export default class List extends React.Component {
 
-    static contextType = ThemeContext;
-  
-
-
-    static contextType = ThemeContext;
-
     state = {
         date: [1, 2, 3, 4, 5, 6, 7]
     }
@@ -23,7 +17,7 @@ export default class List extends React.Component {
             <ul>
                 {
                     this.state.date.map((e, i) => {
-                        return <ListItem data={e} theme={this.context} key={i} />
+                        return <ListItem data={e} key={i} />
                     })
                 }
             </ul>
