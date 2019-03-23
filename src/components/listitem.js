@@ -2,6 +2,6 @@ import React from 'react';
 
 
 export default (props) => {
-    return <li>{props.data}</li>
+    return <li style={{backgroundColor: 'black', color: 'white' }}>{props.data}</li>
 }
 
