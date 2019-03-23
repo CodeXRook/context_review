@@ -3,21 +3,19 @@ import ListItem from '../components/listitem';
 
 export default class List extends React.Component {
 
-    state ={
-        date: [1, 2, 3, 4, 5, 6, 7 ]
+    state = {
+        date: [1, 2, 3, 4, 5, 6, 7]
     }
 
     render() {
-        return(
+        return (
             <ul>
                 {
-            this.state.date.map((e, i ) => {
-                return <ListItem data={e} theme={this.props.theme} key={i} />
-            
-               
-            })
-        }
-         </ul>
+                    this.state.date.map((e, i) => {
+                        return <ListItem data={e} theme={this.props.theme} key={i} />
+                    })
+                }
+            </ul>
         )
     }
 }
