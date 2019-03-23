@@ -9,7 +9,13 @@ export default (props) => {
         <LanguageContext.Consumer>
             {
                 (language) => {
-                    return
+                    return <ThemeContext.Comsumer>
+                        {
+                            (theme) => {
+                                return <li style={{ backgroundColor: value.backgroundColor, color: value.color }}>{props.data}</li>
+                            }
+                        }
+                    </ThemeContext.Comsumer>
                 }
             }
         </LanguageContext.Consumer>
