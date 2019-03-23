@@ -4,10 +4,13 @@ import List from './containers/list';
 
 class App extends Component {
 
+  state = {
+    theme:{ backgroundColor: 'white', color: 'black'}
+  }
    
   render() {
     return (
-     <List />
+     <List theme={this.state.theme}/>
 
     );
   }

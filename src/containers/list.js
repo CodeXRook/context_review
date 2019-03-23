@@ -4,7 +4,7 @@ import ListItem from '../components/listitem';
 export default class List extends React.Component {
 
     state ={
-        date: [1, 2, 3, 4, 5, 6, 7]
+        date: [1, 2, 3, 4, 5, 6, 7 ]
     }
 
     render() {
@@ -12,7 +12,7 @@ export default class List extends React.Component {
             <ul>
                 {
             this.state.date.map((e, i ) => {
-                return <ListItem data={e} />
+                return <ListItem data={e} theme={this.props.theme} key={i} />
             
                
             })
