@@ -17,7 +17,7 @@ export default class List extends React.Component {
             <ul>
                 {
                     this.state.date.map((e, i) => {
-                        return <ListItem data={e} theme={this.props.theme} key={i} />
+                        return <ListItem data={e} theme={this.contex} key={i} />
                     })
                 }
             </ul>
