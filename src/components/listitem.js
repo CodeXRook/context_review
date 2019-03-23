@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeContext from '../contexts/theme';
 
 
 export default (props) => {
