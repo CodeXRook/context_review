@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import List from './containers/list';
+import ThemeContext from './contexts/theme';
 
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
   state = {
     theme:{ backgroundColor: 'white', color: 'black'}
   }
+
   handleThemeChange = (e) => {
     const {innerText} = e.target;
 
@@ -20,10 +22,11 @@ class App extends Component {
    
   render() {
     return ( 
-      <>
+      <ThemeContext.Provider>
       <button onClick={this.handleThemeChange}>Light Theme</button> <button onClick={this.handleThemeChange}>Dark Theme</button> 
      <List theme={this.state.theme}/>
-      </>
+     </ThemeContext.Provider>
+      
     );
   }
 }

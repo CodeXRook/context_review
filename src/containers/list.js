@@ -16,6 +16,8 @@ export default class List extends React.Component {
         date: [1, 2, 3, 4, 5, 6, 7]
     }
 
+
+
     render() {
         console.log(this.context);
         return (
