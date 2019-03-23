@@ -5,7 +5,7 @@ import ThemeContext from './contexts/theme';
 
 class App extends Component {
 
-  
+
   state = {
     theme:{ backgroundColor: 'white', color: 'black'}
   }
@@ -14,10 +14,10 @@ class App extends Component {
     const {innerText} = e.target;
 
     if(innerText === 'Dark Theme') {
-      this.setState({ theme: { backgroundColor: 'black', color: 'white'} })
+      this.setState({ theme: { backgroundColor: 'black', color: 'white' } })
     }
     else if (innerText === 'Light Theme') {
-      this.setState({ theme: { backgroundColor: 'white', color: 'black'} })
+      this.setState({ theme: { backgroundColor: 'white', color: 'black' } })
     }
   }
    

@@ -19,9 +19,8 @@ export default (props) => {
         <ThemeContext.Consumer>
             {
                (theme) => {
-                   return <li style= {{ backgrouhndColor: theme.backgroundColor, color: theme.color }}>{props.data}</li>
+                   return <li style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>{props.data}</li>
             }
-                 
             }
         </ThemeContext.Consumer>
     );

@@ -1,7 +1,5 @@
 import React from 'react';
 import ListItem from '../components/listitem';
-import ThemeContext from '../contexts/theme';
-
 
 export default class List extends React.Component {
 
