@@ -22,12 +22,12 @@ class App extends Component {
    
   render() {
     return ( 
-      <LanguageContext.Provider value={}>
-      <ThemeContext.Provider>
+     
+      <ThemeContext.Provider value={this.state.theme}>
       <button onClick={this.handleThemeChange}>Light Theme</button> <button onClick={this.handleThemeChange}>Dark Theme</button> 
      <List theme={this.state.theme}/>
      </ThemeContext.Provider>
-     </LanguageContext.Provider>
+    
     );
   }
 }

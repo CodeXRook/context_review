@@ -6,8 +6,7 @@ import ThemeContext from '../contexts/theme';
 export default class List extends React.Component {
 
     static contextType = ThemeContext;
-    static contextType = AuthContext;
-    static contextType = LanguageContext;
+  
 
 
     static contextType = ThemeContext;
