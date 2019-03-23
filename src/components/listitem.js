@@ -1,17 +1,16 @@
 import React from 'react';
 import ThemeContext from '../contexts/theme';
 
+//HOC : Higher Order Components
+
 
 export default (props) => {
     return(
-
-    <ThemeContext.Consumer>
-        {
-            (value) => {
-            return <li style={{ backgroundColor: value.backgroundColor, color: value.color }}>{props.data}</li>   
+        <LanguageContext.Consumer>
+            {
+                
             }
-        }
-    </ThemeContext.Consumer>
+        </LanguageContext.Consumer>
     );
 }
 

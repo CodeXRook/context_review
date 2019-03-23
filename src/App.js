@@ -5,6 +5,7 @@ import ThemeContext from './contexts/theme';
 
 class App extends Component {
 
+  
   state = {
     theme:{ backgroundColor: 'white', color: 'black'}
   }
